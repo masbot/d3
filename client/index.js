@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+import App from './components/NinjaCorp';
+import Firebase from './components/FirebaseComponent';
 
 const Root = () => {
-  return <div>Lyrical</div>
+  return (
+    <Router history={hashHistory}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Firebase}/>
+      </Route>
+    </Router>
+  )
 };
 
 ReactDOM.render(
