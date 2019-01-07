@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
-import App from './components/NinjaCorp';
+import App from './components/Exercise2';
 import Firebase from './components/FirebaseComponent';
 
 const Root = () => {
